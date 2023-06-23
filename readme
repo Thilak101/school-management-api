@@ -1,0 +1,48 @@
+1. add class (use post route) = localhost:4000/api/class/add
+
+example:
+
+{
+  "number_of_students": [],
+  "class_teacher": [],
+  "className": "4rd-std, D-sec"
+}
+
+2. add teacher (use post route) = localhost:4000/api/teacher/add
+
+example: 
+
+{
+  "teacher_name": "teacher2",
+  "qualification": "B.Ed",
+  "experience": "fresher",
+  "contactNo": 999000,
+  "studentId": [],
+  "classId": "64953e6278173a0bf438d55b"
+}
+
+3. add student (use post route) = localhost:4000/api/student/add
+
+example: 
+
+{
+  "student_name": "student2",
+  "enrollment_date": "10-04-2022",
+  "classId": "64953e6278173a0bf438d55b",
+  "classTeacherId": "64953e8078173a0bf438d55d",
+  "address": "Trichy, Kavery street",
+  "contactNo": 999000999000
+}
+
+4. get class Data (use get route) = localhost:4000/api/class/data
+
+5. get student Data (use get route) = localhost:4000/api/student/data
+
+6. get teacher Data (use get route) = localhost:4000/api/teacher/data
+
+7. delete teacher data (use delete route and pass _id on params) = localhost:4000/api/teacher/delete/:id
+
+8. delete student data (use delete route and pass _id on params) = localhost:4000/api/student/delete/:id
+
+9. delete class data (use delete route and pass _id on params) = localhost:4000/api/class/delete/:id
+
